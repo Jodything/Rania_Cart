@@ -90,7 +90,7 @@ li a:hover{
 .content{
     padding-top: 3%;
     padding-bottom: 5%;
-    height: 350px;
+    height: auto;
     margin-top: -9px;
 }
 .signup-content{
@@ -140,4 +140,19 @@ li a:hover{
         max-width: 600px;
         margin: 0 auto;
     }
+}
+
+
+input.help-block {
+  background-color: pink;
+}
+
+.whoops {
+  display: block;
+  color: red;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% { opacity: 0.0; }
 }
