@@ -32,37 +32,30 @@
     <div class="content">
       <div class="signup-content">
         <form id="signUpForm" action="../cart/vertical-nav-bar/category1.html" method="POST" onsubmit="return validate();">
-          <p>* Name:
-            <br>
-            <input type="text" name="name" />
-          </p>
-          <p>* Email:
-            <br>
-            <input type="email" name="email" />
-          </p>
-          <p>Mobile
-            <br>
-            <input type="tel" name="phone" />
-          </p>
-          <p>Age:
-            <br>
-            <input type="number" name="age" />
-          </p>
+          <p>* Name:</p>
+          <input type="text" name="name" />
 
-          <p>Gender:
-            <br>
-            <input type="radio" name="gender" value="female" />Female
-            <input type="radio" name="gender" value="male" />Male
-          </p>
+          <p>* Email:</p>
+          <input type="email" name="email" />
 
-          <p>* Enter password:
-            <br>
-            <input type="password" name="password" />
-          </p>
-          <p>* Re-enter password:
-            <br>
-            <input type="password" name="confirmPassword" />
-          </p>
+          <p>Mobile</p>
+          <input type="tel" name="phone" />
+
+          <p>Age:</p>
+          <input type="number" name="age" />
+
+          <p>Gender:</p>
+          <input type="radio" name="gender" value="male" checked/>Male
+          <input type="radio" name="gender" value="female" />Female
+          <input type="radio" name="gender" value="other" />Other
+
+          <p>* Enter password:</p>
+          <input type="password" name="password" />
+
+          <p>* Re-enter password:</p>
+          <input type="password" name="confirmPassword" />
+          <br />
+          <br />
           <input class="log-sub-button" type="submit" value="signUp" />
         </form>
       </div>
