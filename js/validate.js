@@ -52,6 +52,7 @@ function validate() {
         });
     }
 
+    // compile errors and render
     if (errors.length) {
         for (var i = 0; i < errors.length; i++) {
             if (!errors[i].field.classList.contains('help-block')) {
@@ -61,11 +62,16 @@ function validate() {
         }
         return false;
     } else {
+        createCookie('name', form.name.value);
+        createCookie('loggedIn', true);
         return true;
     }
 }
 
 
+/***********************
+* Validation Functions *
+***********************/
 
 function validateName(name) {
     if (name.value.length < 2) {
@@ -132,9 +138,23 @@ function validateConfirmPassword(confirmPassword, password) {
     }
 }
 
+
+/**********************
+* Helper Functions*
+**********************/
+
 function _removeError(el) {
     if (el.classList.contains('help-block')) {
         el.classList.remove('help-block');
         el.nextSibling.remove();
     }
+}
+
+
+/**********************
+* Cookie Functions*
+**********************/
+
+function createCookie(key, value) {
+    document.cookie = key + '=' + value + ';';
 }
