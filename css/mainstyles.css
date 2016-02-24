@@ -135,3 +135,6 @@ ul.vert-nav li a:hover{
     }
 }
 
+#logOut {
+  display: none;
+}
